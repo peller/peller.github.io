@@ -1,0 +1,34 @@
+body {
+  background-image: url(chevron.png);
+  background-repeat: repeat-x repeat-y;
+  background-size: 15%;
+}
+
+h3 {
+  color: purple;
+}
+
+.main {
+  background: white;
+  border: 2pt solid black;
+  float: none;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.btn-custom {
+  background-color: hsl(0, 100%, 82%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="purple", endColorstr="white");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(purple), to(white));
+  background-image: -moz-linear-gradient(top, purple, white);
+  background-image: -ms-linear-gradient(top, purple, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, purple), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(top, purple, white);
+  background-image: -o-linear-gradient(top, purple, white);
+  background-image: linear-gradient(purple, white);
+  border-color: white white hsl(0, 100%, 80%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.13);
+  -webkit-font-smoothing: antialiased;
+}
