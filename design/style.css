@@ -1,0 +1,57 @@
+:root{--bg:#fcfcff;--yellow:#ffca1b;--ink:#000;--ph:#fff;--band:rgba(255,202,27,.6)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 'Fredoka',system-ui,sans-serif}
+h1,h2,h3,.nav a,.band{font-family:'Fredoka One','Fredoka',system-ui,sans-serif;font-weight:400}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:930px;margin:0 auto;padding:0 20px}
+.top{max-width:1180px;margin:0 auto;padding:40px 20px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.top.inner{flex-direction:column;align-items:center;gap:12px;padding-bottom:36px}
+.top.inner nav{align-self:flex-end}.tagline{margin-top:2px;font-size:20px;font-weight:400;line-height:1.4;text-align:center}.top.inner .nav a{font-size:20px}
+.logo{display:flex;justify-content:center;text-decoration:none;font:italic 600 56px/1.1 cursive}.top.inner .logo{font-size:72px}
+.logo img{display:block;width:min(409px,100%);height:auto}.top.inner .logo img{width:min(549px,100%);margin-bottom:-63px}
+.nav{display:flex;gap:48px;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:24px}
+.nav a[aria-current=page]{color:var(--yellow)}
+.ph{background:var(--ph);position:relative;overflow:hidden}
+.ph .im{position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat}
+.hero{aspect-ratio:930/437;margin-bottom:64px}
+h1{font-size:40px;line-height:1.2;margin:0 0 24px}
+.center{text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid3 a{display:block;aspect-ratio:1}
+.ov{z-index:1;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:8px;background:rgba(0,0,0,.33);color:#fff;font:600 32px/1.5 'Fredoka',system-ui,sans-serif;text-align:center;opacity:0;transition:opacity .15s}.grid3 a:hover .ov,.grid3 a:focus-visible .ov{opacity:1}
+.photos{grid-template-columns:repeat(3,1fr);gap:12px}.photos .ph{aspect-ratio:3/4}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:32px}
+.bar h1{margin:0}
+.btn{display:inline-block;background:var(--yellow);color:var(--#fff);text-decoration:none;font-weight:600;padding:8px 26px;border-radius:8px}
+.btn:hover{filter:brightness(.95)}
+.proj{max-width:936px}.proj .main{margin-bottom:40px}
+.proj p{max-width:76ch}
+.video{display:block;width:100%;height:auto;margin-bottom:40px}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:32px 0}
+.meta h3{font-size:20px;margin:0 0 6px}
+.meta ul{margin:0;padding:0;list-style:none}
+.award{margin-bottom:32px}
+.gallery{display:flex;flex-direction:column;gap:24px;margin-top:32px}.row{display:flex;gap:12px}.row .ph{flex:var(--w) 1 0%;min-width:0}.cols{display:flex;gap:12px;align-items:flex-start}.col{flex:1;min-width:0;display:flex;flex-direction:column;gap:24px}.split{display:grid;grid-template-columns:var(--sc,7fr 5fr);gap:32px;align-items:start;margin-bottom:32px}
+
+
+.pn{display:flex;justify-content:space-between;margin:64px 0 24px;font-size:28px;font-weight:600}
+.pn a{text-decoration:none}.pn a:hover{color:var(--yellow)}
+.about{display:grid;grid-template-columns:5fr 6fr;gap:44px;align-items:start;margin-bottom:56px}
+.about .ph{aspect-ratio:415/597}
+.about h2{font-size:32px;margin:0 0 8px}
+.top-link{display:block;margin:56px auto 24px;width:max-content;color:var(--yellow);font:400 24px/1.5 'Fredoka',sans-serif;text-decoration:none;border-bottom:5px solid var(--yellow)}
+.band{background:var(--band);text-align:center;padding:8px 20px;font-size:16px}
+.band a{text-decoration:none;color:var(--#fff)}
+@media(max-width:700px){
+ body{font-size:16px}h1{font-size:30px}
+ .nav{gap:20px}.nav a{font-size:18px}.ov{font-size:22px}.logo img{width:70vw}.top.inner .logo img{width:80vw;margin-bottom:-30px}.logo,.top.inner .logo{font-size:40px}
+ .grid3,.photos{grid-template-columns:1fr 1fr;gap:12px}
+ .meta,.about,.split{grid-template-columns:1fr}
+ .top.inner nav{align-self:center}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+nav .small-logo img {height:100px;}
+nav.home {align-items:center;}
